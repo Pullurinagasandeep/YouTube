@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>youtube.com clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body
+  {
+      margin:0px;
+     
+  }
+      
+  
+     
+  p
+  {
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .header
+  {
+    height:55px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+  .left-section{
+    display:flex;
+    align-items:center;
+    
+   
+  }
+  .Hamburg-menu{
+      
+      height:30px;
+      margin-left:20px;
+      margin-right:20px;
+  
+  }
+  .youtube-logo{
+      
+      heigth:30px;
+      width:100px;
+     
+  }
+  .middel-section{
+    background-color:lightpink;
+    margin-left:35px;
+    margin-right:30px;
+    display:flex;
+    align-items:center;
+    flex:1;
+    max-width:400px;
+  }
+  .search-box{
+      height:35px;
+      background-color:lightgray;
+      border-width:1px;
+      flex:1;
+  }
+  .search-icon{
+  height:24px;
+      
+  }
+  .voice-search-icon{
+      height:20px;
+  }
+  .search-button{
+      
+     height:38px;
+     border-width:1px;
+  }
+  .voice-button{
+      height
+  }
+  .right-section{
+   background-color:lightblue;
+    width:200px;
+  }
+  .vedio
+  {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:20px;
+    row-gap:50px;
+    
+  }
+  
+  .vedio-preveiw
+  {
+    width:300px;
+    margin-top:0px;
+    margin-bottom:12px; 
+  }
+  
+  .vedio-grid
+  {
+    display:grid;
+    grid-template-columns:50px 1fr;
+   
+  }
+  
+  .profile-picture
+  {
+    border-radius:50px;
+    width:40px;
+  }
+  .thumbnail-row
+  {
+   margin-bottom:12px;
+  } 
+  .vedio-author
+  { 
+    font-family:Roboto;
+    font-size: 12px;
+    color:(96,96,96);
+    margin-bottom:5px;
+  }
+  .vedio-stats
+  {
+    font-family:Roboto;
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+  }
+  .thumbnail
+  {
+    width:100%;
+  }
+  
+  .vedio-title 
+  {
+    font-size:14px;
+    font-family:Roboto;
+    font-weight:500;
+    line-height:20px;
+    margin-bottom:12px;
+  }
+
+</style>
+     
+
+  
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      <img class="Hamburg-menu"src="images/hamburger-menu.svg"> 
+      <img class="youtube-logo"src="images/youtube-logo.svg">
+    </div>
+    <div class="middel-section">
+      <input class="search-box" type="text" placeholder="search">
+      <button class="search-button">
+       <img class="search-icon" src="images/search.svg">   
+      </button>
+      <button class="voice-button">
+      <img class="voice-search-icon" src="images/voice-search-icon.svg">
+      </button>
+      
+    </div>
+    <div class="right-section">
+      right
+    </div>
+  </div>
+  
+  <div class="vedio">
+    
+   <div class="vedio-preveiw">
+     <div class="thumbnail-row">
+      <img class="thumbnail" src="images/thumbnail-1.webp">
+     </div>
+     <div class="vedio-grid">
+       <div class="channel-picture">
+        <img class="profile-picture" src="images/channel-1.jpeg"> 
+       </div>
+       <div class="vedio-info">
+        <p class="vedio-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="vedio-author">
+       Marques Browniee
+    </p>
+    <p class="vedio-stats">
+       3.4M veiws &#183; 6 months ago 
+    </p>
+       </div>
+     </div>
+   </div>
+   
+  <div class="vedio-preveiw">
+    <div class="thumbnail-row">
+     <img class="thumbnail" src="images/thumbnail-2.webp">
+    </div>
+    <div class="vedio-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="images/channel-2.jpeg">
+      </div>
+      <div class="vedio-info">
+        <p class="vedio-title">
+      Try Not To Laugh Challenge #9 
+    </p>
+    <p class="vedio-author">
+       Markiplier
+    </p>
+    <p class="vedio-stats">
+       19M veiws &#183; 4 years ago 
+    </p>
+      </div>   
+    </div>
+  </div>
+  <div class="vedio-preveiw">
+    <div class="thumbnail-row">
+      <img class="thumbnail" src="images/thumbnail-3.webp">
+    </div>
+    <div class="vedio-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="images/channel-3.jpeg"> 
+      </div>
+      <div class="vedio-info">
+        <p class="vedio-title">
+           Crazy Tik Toks Taken Moments Before DISASTER
+        </p>
+        <p class="vedio-author">
+           SSSniperWolf
+        </p>
+        <p class="vedio-stats">
+           12M veiws &#183; 1 year ago
+        </p>
+      </div> 
+    </div>
+  </div>
+   
+  <div class="vedio-preveiw">
+    <div class="thumbnail-row">
+     <img class="thumbnail" src="images/thumbnail-4.webp">
+    </div>
+    <div class="vedio-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="images/channel-4.jpeg">
+      </div>
+      <div class="vedio-info">
+        <p class="vedio-title">
+         The Simplest Maths Problem No One Can Solve-Collatz Conjecture
+       </p>
+       <p class="vedio-author">
+         Veritasium
+       </p>
+       <p class="vedio-stats">
+       18M veiws &#183; 4 months ago 
+       </p>
+      </div>   
+    </div>
+  </div>
+  <div class="vedio-preveiw">
+    <div class="thumbnail-row">
+     <img class="thumbnail" src="images/thumbnail-5.webp">
+    </div>
+    <div class="vedio-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="images/channel-5.jpeg">
+      </div>
+      <div class="vedio-info">
+        <p class="vedio-title">
+         Kadane&apos;
+s Algorithm to Maximum Sum Subarray Problem
+       </p>
+       <p class="vedio-author">
+         CS Dojo
+       </p>
+       <p class="vedio-stats">
+       519K views &#183; 5 years ago 
+       </p>
+      </div>   
+    </div>
+  </div>
+  <div class="vedio-preveiw">
+    <div class="thumbnail-row">
+     <img class="thumbnail" src="images/thumbnail-6.webp">
+    </div>
+    <div class="vedio-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="images/channel-6.jpeg">
+      </div>
+      <div class="vedio-info">
+        <p class="vedio-title">
+         Anything You Can Fit In The Circle I’ll Pay For
+       </p>
+       <p class="vedio-author">
+         MrBeast
+       </p>
+       <p class="vedio-stats">
+        141M views &#183;1 year ago
+       </p>
+      </div>   
+    </div>
+  </div>
+  </div>
+ 
+</body>
+</html>
